@@ -1,0 +1,13 @@
+<nav>
+    <h1><a href="/">Digimon Cards</a></h1>
+    <ul>
+        <% if(user){%>
+        <li>Welcome , <%= user.username %></li>
+        <li><a href="/logout" class="logout btn">Log out</a></li>
+        
+       <%} else{ %>
+          <li><a href="/login">Log in</a></li>
+          <li><a href="/signup" >Sign up</a></li>
+          <%} %>
+    </ul>
+</nav>
